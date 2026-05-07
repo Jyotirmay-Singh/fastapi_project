@@ -1,5 +1,5 @@
 from datetime import datetime, timezone, timedelta
-from typing import dict, Optional, Any
+from typing import Optional, Any
 from jose import jwt, JWTError, ExpiredSignatureError
 from app.core.config import settings
 
