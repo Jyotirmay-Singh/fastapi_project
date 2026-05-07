@@ -12,5 +12,5 @@ class AuthInput(BaseModel):
 def login(auth:AuthInput):
     if auth.username=='admin' and auth.password=='admin':
         token = create_token({'sub':auth.username})
-        return {'access_token':token}
+        return {'access_token':token} 
     return {'error':'Invalid Credentials'}
